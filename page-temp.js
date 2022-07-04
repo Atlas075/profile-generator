@@ -18,8 +18,8 @@ const generateTeam = (team) => {
             <div class="card-info">
                 <ul>
                     <li>ID: ${manager.id}</li>
-                    <li>Email: <a href="${manager.email}">${manager.email}</a> </li>
-                    <li>Office number: ${manager.managerOffice}</li>
+                    <li>Email: <a href="https://www.${manager.email}" target="_blank">${manager.email}</a> </li>
+                    <li>Office number:${manager.managerOffice}</li>
                 </ul>
             </div>
           
@@ -45,12 +45,12 @@ const generateTeam = (team) => {
             <div class="card-info">
                 <ul>
                     <li>ID: ${engineer.id}</li>
-                    <li>Email: <a href="${engineer.email}">${engineer.email}</a> </li>
-                    <li>GitHub: <a href="${engineer.github}">${engineer.github}</a> </li>
+                    <li>Email: <a href="https://www.${engineer.email}" target="_blank">${engineer.email}</a> </li>
+                    <li>GitHub: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a> </li>
                 </ul>  
             </div>
           
-        </div>
+        </div>donniemassenburg
 
     </div>
         `
@@ -72,7 +72,7 @@ const generateTeam = (team) => {
               <div class="card-info">
                   <ul>
                       <li>ID: ${intern.id}</li>
-                      <li>Email: <a href="${intern.email}">${intern.email}</a> </li>
+                      <li>Email: <a href="https://www.${intern.email}" target="_blank">${intern.email}</a> </li>
                       <li>School: ${intern.school}</li>
                   </ul>  
               </div>
